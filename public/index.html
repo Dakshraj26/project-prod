@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevLaunch - Landing Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f9fafc;
+    }
+
+    /* Navbar */
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 15px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #0ea5e9, #6366f1);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: white;
+      color: #0f172a;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e2e8f0;
+    }
+
+    /* Features */
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .feature-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #0ea5e9;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>DevLaunch</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Build & Deploy Faster 🚀</h2>
+    <p>A modern DevOps-ready landing page template for your CI/CD, Docker, and cloud projects.</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h3>Features</h3>
+
+    <div class="feature-container">
+      <div class="card">
+        <h4>⚡ Fast Deployment</h4>
+        <p>Deploy your app instantly using CI/CD pipelines and Docker containers.</p>
+      </div>
+
+      <div class="card">
+        <h4>🐳 Docker Ready</h4>
+        <p>Fully containerized setup for scalable and production-ready systems.</p>
+      </div>
+
+      <div class="card">
+        <h4>☁️ Cloud Friendly</h4>
+        <p>Works perfectly with AWS, Azure, and any cloud hosting provider.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 DevLaunch. Built for DevOps Practice.</p>
+  </footer>
+
+</body>
+</html>
